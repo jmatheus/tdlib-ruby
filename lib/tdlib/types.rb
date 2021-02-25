@@ -855,7 +855,8 @@ module TD::Types
       if (klass = LOOKUP_TABLE[type])
         const_get(klass).new(object)
       else
-        raise ArgumentError.new("Can't find class for #{type}")
+        puts "Can't find class for #{type}" 
+        #raise ArgumentError.new("Can't find class for #{type}")
       end
     else 
       object
