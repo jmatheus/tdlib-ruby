@@ -79,6 +79,7 @@ module TD::Types
       'userProfilePhoto'                                => 'UserProfilePhoto',
       'userProfilePhotos'                               => 'UserProfilePhotos',
       'users'                                           => 'Users',
+      'sender'                                          => 'Sender',
       'chatAdministrator'                               => 'ChatAdministrator',
       'chatAdministrators'                              => 'ChatAdministrators',
       'chatPermissions'                                 => 'ChatPermissions',
@@ -1057,6 +1058,7 @@ module TD::Types
     secret_chat_state
     send_message_options
     session
+    sender
     sessions
     shipping_option
     sticker
