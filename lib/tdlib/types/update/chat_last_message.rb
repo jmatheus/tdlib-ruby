@@ -9,6 +9,5 @@ module TD::Types
   class Update::ChatLastMessage < Update
     attribute :chat_id, TD::Types::Integer
     attribute :last_message, TD::Types::Message.optional.default(nil)
-    attribute :order, TD::Types::Integer
   end
 end
