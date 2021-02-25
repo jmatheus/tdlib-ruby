@@ -45,10 +45,7 @@ module TD::Types
     attribute :photo, TD::Types::ChatPhoto.optional.default(nil)
     attribute :permissions, TD::Types::ChatPermissions
     attribute :last_message, TD::Types::Message.optional.default(nil)
-    attribute :order, TD::Types::Integer
-    attribute :is_pinned, TD::Types::Bool
     attribute :is_marked_as_unread, TD::Types::Bool
-    attribute :is_sponsored, TD::Types::Bool
     attribute :has_scheduled_messages, TD::Types::Bool
     attribute :can_be_deleted_only_for_self, TD::Types::Bool
     attribute :can_be_deleted_for_all_users, TD::Types::Bool
@@ -60,7 +57,6 @@ module TD::Types
     attribute :unread_mention_count, TD::Types::Integer
     attribute :notification_settings, TD::Types::ChatNotificationSettings
     attribute :action_bar, TD::Types::ChatActionBar.optional.default(nil)
-    attribute :pinned_message_id, TD::Types::Integer
     attribute :reply_markup_message_id, TD::Types::Integer
     attribute :draft_message, TD::Types::DraftMessage.optional.default(nil)
     attribute :client_data, TD::Types::String
