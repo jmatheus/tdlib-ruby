@@ -39,7 +39,7 @@ module TD::Types
   # @attr reply_markup [TD::Types::ReplyMarkup, nil] Reply markup for the message; may be null.
   class Message < Base
     attribute :id, TD::Types::Integer
-    attribute :sender_user_id, TD::Types::Integer
+    attribute :sender, TD::Types::Sender
     attribute :chat_id, TD::Types::Integer
     attribute :sending_state, TD::Types::MessageSendingState.optional.default(nil)
     attribute :scheduling_state, TD::Types::MessageSchedulingState.optional.default(nil)
