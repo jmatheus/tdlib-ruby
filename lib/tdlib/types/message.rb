@@ -58,7 +58,6 @@ module TD::Types
     attribute :ttl_expires_in, TD::Types::Float
     attribute :via_bot_user_id, TD::Types::Integer
     attribute :author_signature, TD::Types::String.optional.default(nil)
-    attribute :views, TD::Types::Integer
     attribute :media_album_id, TD::Types::Integer
     attribute :restriction_reason, TD::Types::String
     attribute :content, TD::Types::MessageContent
