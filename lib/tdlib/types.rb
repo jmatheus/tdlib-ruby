@@ -79,7 +79,6 @@ module TD::Types
       'userProfilePhoto'                                => 'UserProfilePhoto',
       'userProfilePhotos'                               => 'UserProfilePhotos',
       'users'                                           => 'Users',
-      'sender'                                          => 'Sender',
       'chatAdministrator'                               => 'ChatAdministrator',
       'chatAdministrators'                              => 'ChatAdministrators',
       'chatPermissions'                                 => 'ChatPermissions',
@@ -619,6 +618,9 @@ module TD::Types
       'pushMessageContentChatJoinByLink'                => 'PushMessageContent::ChatJoinByLink',
       'pushMessageContentMessageForwards'               => 'PushMessageContent::MessageForwards',
       'pushMessageContentMediaAlbum'                    => 'PushMessageContent::MediaAlbum',
+      'messageSender'                                   => 'MessageSender',
+      'messageSenderChat'                               => 'MessageSender::Chat',
+      'messageSenderUser'                               => 'MessageSender::User',
       'NotificationType'                                => 'NotificationType',
       'notificationTypeNewMessage'                      => 'NotificationType::NewMessage',
       'notificationTypeNewSecretChat'                   => 'NotificationType::NewSecretChat',
@@ -996,6 +998,7 @@ module TD::Types
     message_forward_origin
     message_link_info
     message_scheduling_state
+    message_sender
     message_sending_state
     messages
     minithumbnail
@@ -1058,7 +1061,6 @@ module TD::Types
     secret_chat_state
     send_message_options
     session
-    sender
     sessions
     shipping_option
     sticker
